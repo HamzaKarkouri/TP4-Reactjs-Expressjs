@@ -2,7 +2,7 @@ import {useEffect,useState} from "react";
 import {deleteProductByID,getAllProducts,getAllproducts} from "../services/product.services"
 import { Link } from "react-router-dom";
 import { Table ,Button } from 'react-bootstrap';
-
+import { BsTrash, BsPencil } from 'react-icons/bs';
 export  function ProductList(){
     const [products,setProducts]=useState([]);
     useEffect(()=>{
@@ -29,7 +29,8 @@ export  function ProductList(){
       {products.map((elem,index)=><tr key={index}>
         <td>{elem.name}</td>
         <td>{elem.price}</td>
-        <td><Button onClick={() => deleteProduct(elem._id)} variant="danger">Delete</Button></td>
+        <td><Button onClick={() => deleteProduct(elem._id)} variant="danger"><BsTrash className="mr-1" /></Button><Button onClick={() => deleteProduct(elem._id)} variant="primary"><BsPencil className="mr-1" /></Button></td>
+       
         </tr>)}
       </tbody>
   </Table>
