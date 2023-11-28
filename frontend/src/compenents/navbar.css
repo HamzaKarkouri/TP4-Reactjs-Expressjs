@@ -1,0 +1,18 @@
+.custom-navbar {
+    background-color: #3498db; /* Set a custom background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  }
+  
+  .custom-navbar .navbar-brand,
+  .custom-navbar .nav-link {
+    color: #ecf0f1; /* Set text color for brand and links */
+  }
+  
+  .custom-navbar .navbar-toggler-icon {
+    background-color: #ecf0f1; /* Set color for the toggle icon */
+  }
+  
+  .custom-navbar .navbar-toggler {
+    border-color: #ecf0f1; /* Set border color for the toggle button */
+  }
+  
